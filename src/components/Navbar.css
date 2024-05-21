@@ -1,0 +1,30 @@
+
+.nav{
+    width: 100%;
+    background-color: #00204a;;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    color: white;
+    height: 50px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+li{
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+li:hover{
+    color: rgb(183, 198, 213);
+    font-size: 17px;
+}
+

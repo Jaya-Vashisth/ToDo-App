@@ -1,0 +1,84 @@
+*{
+  margin:0;
+  padding: 0;
+}
+body{
+  background-color: #8cbfe2;
+  font-family: sans-serif;
+}
+
+
+.container{
+  width: 60%;
+  margin: auto;
+}
+
+.card{
+ 
+  border-radius: 8px;
+  width: 470px;
+  margin: auto;
+  margin-top: 50px;
+  background-color: #005792;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 10px;
+  font-weight: 600;
+  color: rgb(247, 241, 241);
+  min-height: 70vh;
+
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  
+}
+
+input{
+  width: 400px;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+  padding: 0px 15px;
+}
+
+.savebtn{
+   border: none;
+   background-color:#df9733;
+   height: 30px;
+   width: 60px;
+   border-radius: 20px;
+   cursor: pointer;
+   color: white;
+}
+
+.savebtn:hover{
+  background-color: #00204a;
+}
+
+.create{
+  display: flex;
+  gap: 10px;
+}
+
+.todos{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-between;
+  gap:4px;
+}
+
+.edit{
+  width: 30px;
+}
+
+.delete{
+  width: 30px;
+}
