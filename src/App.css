@@ -1,22 +1,32 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 *{
   margin:0;
   padding: 0;
 }
 body{
-  background-color: #8cbfe2;
-  font-family: sans-serif;
+  /* background-color: rgb(140, 191, 226,0.3);
+   */
+   background-color: rgb(0, 87, 146,0.5);
+  font-family: poppins;
 }
 
 
 .container{
-  width: 60%;
+  width: 50%;
   margin: auto;
 }
 
+h3{
+  color: rgb(0, 0, 0,0.8);
+  font-weight: 800;
+}
+
 .card{
- 
+  
   border-radius: 8px;
-  width: 470px;
   margin: auto;
   margin-top: 50px;
   background-color: #005792;
@@ -25,24 +35,31 @@ body{
   gap: 10px;
   padding: 10px 10px;
   font-weight: 600;
-  color: rgb(247, 241, 241);
+  color: rgb(234, 229, 224);;
   min-height: 70vh;
-
 }
 
 .header{
   display: flex;
   justify-content: center;
+  margin: 10px;
   
 }
 
-input{
-  width: 400px;
+.create input{
+  width: 90%;
   height: 30px;
   border: none;
   border-radius: 20px;
   padding: 0px 15px;
+  outline: none;
+  
 }
+
+.create input:focus{
+  border: 0.2px solid #df9733;
+}
+
 
 .savebtn{
    border: none;
@@ -51,34 +68,118 @@ input{
    width: 60px;
    border-radius: 20px;
    cursor: pointer;
-   color: white;
+   color: black ;
+   font-weight: 700;
+   transition: all 0.4s ease-in-out;
 }
 
 .savebtn:hover{
-  background-color: #00204a;
+  background-color: #8cbfe2;
 }
+
+
 
 .create{
   display: flex;
   gap: 10px;
 }
 
-.todos{
+.tasks{
+  width: inherit;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task{
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.task-item{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  
   
 }
 
+.text{
+   display: inline;
+   word-wrap: break-word;
+   width: 80%;
+   font-weight: 500;
+   
+}
+
+.task input{
+  width: 30px;
+  height: 15px;
+  accent-color: #df9733;
+}
+
+
 .buttons{
   display: flex;
-  justify-content: space-between;
-  gap:4px;
+  justify-content: flex-end;
+  gap:10px;
+  width: 20%;
 }
 
 .edit{
   width: 30px;
+  background-color: #df9733;
+  font-size: 13px;
+  border: none;
+  border-radius: 3px;
+  height: 20px;
+  cursor: pointer;
 }
 
 .delete{
   width: 30px;
+  background-color: #df9733;
+  font-size: 13px;
+  border: none;
+  border-radius: 3px;
+  height: 20px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.edit:hover{
+  background-color: #8cbfe2;
+}
+
+.delete:hover{
+  background-color: #8cbfe2;
+}
+.line-through{
+  text-decoration: line-through;
+  text-decoration-color: black;
+}
+
+.no-task{
+  color: aquamarine;
+  display: flex;
+  justify-content: center;
+
+}
+.showfinished input{
+  width: 30px;
+  height: 15px;
+  accent-color: #df9733;
+}
+.showfinished{
+ display: flex;
+ justify-content: start;
+ align-items: center;
+}
+
+@media  (max-width: 600px) {
+  .card{
+    width: 70%;
+  }
 }
